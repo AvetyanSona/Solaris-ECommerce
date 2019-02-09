@@ -16,7 +16,7 @@ export class SliderItem extends React.Component {
                 <h2>{item.title}</h2>
                 <img src={item.image} />
                 <p>{item.desc}</p>
-                <button onClick={this.handleRemove}>SHOP NOW!</button>
+                <button onClick={this.handleRemove}>DRINK NOW!</button>
             </div>
         )
     }
