@@ -1,33 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One|ZCOOL+QingKe+HuangYou');
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Charm');
 .top-Header{
     width: 100%;
-    height:90vh;
+    height:60vh;
     background-size: cover;
-    background-image: url("../../img/bgphoto.jpg");
+    background-image: url("../../img/bgphoto1.jpg");
     background-position: center;
 }
+.navSmall{
+    height:400px !important;
+    background-position: none;
+}
 .header{
-    width: 68%;
-    padding-top: 10px;
+    width: 80%;
+    padding-top: 15px;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
-.add-card{
-    border: 1px solid;
-    background-color: antiquewhite;
-    width: 150px;
-    height: 30px;
+.header i{
+    padding-right:10px;
+    color:#595959;
+
 }
 .nav-menu{
-    /*width: 100%;*/
+
     display: flex;
     justify-content: space-around;
     /*margin: 0;*/
+    font-family: 'Charm', sans-serif;
+
 }
-.nav-menu>ul{
+.nav-menu>a>ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,21 +41,42 @@
     color: white;
 }
 
-.nav-menu>ul>li>a{
+.nav-menu>a>ul>li>a{
     color:  antiquewhite;
     padding: 0px 20px 0 20px;
     font-size: 25px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Charm', sans-serif;
+    text-decoration: none;
+}
+.nav-menu>a>h1{
+    color: whitesmoke;
+    font-size: 60px;
+    font-family: 'Charm', sans-serif;
+    font-weight: lighter;
+}
+.nav-menu>a>h1>span{
+    color: darkgoldenrod;
+}
+.nav-menu>a{
+    text-decoration: none;   
+}
+.nav-menu>a>ul>a{
+    color:  antiquewhite;
+    padding: 0px 20px 0 20px;
+    font-size: 25px;
+    font-family: 'Charm', cursive;
     text-decoration: none;
 }
 
-
-.nav-menu>h1{
-    color: whitesmoke;
-    font-size: 60px;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-weight: lighter;
-}
-.nav-menu>h1>span{
-    color: darkgoldenrod;
-}
+.nav-link {
+    transition: 0.3s ease;
+    text-decoration: none;
+    padding: 20px 0;
+    /* margin: 0 20px; */
+  }
+  .nav-link:hover {
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    padding: 6px 0; 
+    transition: 0.3s ease;
+  }

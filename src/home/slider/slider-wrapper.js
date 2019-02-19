@@ -2,9 +2,9 @@ import React from 'react';
 import { SliderItem } from './slider-item';
 
 export class SliderWrapper extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
     
     render() {
         return (

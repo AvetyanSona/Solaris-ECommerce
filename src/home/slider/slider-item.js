@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import {Button} from '../../shared/styled.component';
 
 export class SliderItem extends React.Component {
     constructor(props) {
@@ -16,7 +18,10 @@ export class SliderItem extends React.Component {
                 <h2>{item.title}</h2>
                 <img src={item.image} />
                 <p>{item.desc}</p>
-                <button onClick={this.handleRemove}>DRINK NOW!</button>
+                <Link to = '/productslist'>
+                    <Button onClick={this.handleRemove}>Drink Now!</Button>
+                </Link>
+                
             </div>
         )
     }
